@@ -1,0 +1,273 @@
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+   background-color: rgb(37, 37, 37);
+}
+[class*="container"]{
+	max-width: 100%;
+	margin: 0 auto;
+}
+.header__main{
+   font-family: 'Press Start 2P', cursive;;
+   text-align: center;
+   font-size: 20px;
+   font-weight: 400;
+   letter-spacing: 7px;
+   text-transform: uppercase;
+   display: block;
+   color: rgb(0, 255, 60);
+   background-color: #000000;
+   padding: 20px;
+   box-sizing: border-box;
+   margin-bottom: 120px;
+}
+.header__main span::after{
+   background-image: url(../img/info.svg);
+   display: inline-block;
+   content: "";
+   width: 24px;
+   height: 24px;
+   background-color: rgb(21, 255, 0);
+   padding-top: 4px;
+   border-radius: 100px;
+   position: relative;
+	display: inline-block;
+
+}
+
+/* .header__main:hover{
+   color: rgb(255, 21, 212);   
+} */
+.header:hover .header__text{
+   opacity: 1;
+   visibility: visible;
+}
+
+
+.header__text{
+   font-family: 'Press Start 2P', cursive;;
+   max-width: 400px;
+   text-align: center;
+   font-size: 16px;
+   line-height: 1.5;
+   display: block;
+   color: rgb(0, 0, 0);
+   background-color: #eeff00;
+   padding: 20px;
+   box-sizing: border-box;
+   margin: 0 auto;
+   opacity: 0;
+   visibility: hidden;
+   position: absolute;
+   left: 40%;
+   top: 70px;
+   transition: all 0.3s ease 0s;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 44px 40px rgba(255, 0, 0, 0.2);
+   z-index: 100;
+}
+.body{
+   background-color: hsl(0, 0%, 0%);
+   width: 400px;
+   margin: 0 auto;
+   margin-bottom: 80px;
+   
+}
+.body__contant{
+   perspective: 400px;
+perspective-origin: center;
+
+}
+
+.body__contant--title{
+   font-family: 'Montserrat', sans-serif; ;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   font-size: 16px;
+   text-align: center;
+   color: rgb(255, 255, 255);
+   margin-bottom: 12px;
+   
+}
+.body__contant--subtitle{
+   font-family: 'Press Start 2P', cursive;;
+   text-align: center;
+   font-size: 24px;
+   color: rgb(0, 0, 0);
+}
+
+.body__contant--text1 {
+   line-height: 1.5;
+   background-color: #1eff00;
+   padding: 65px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 44px 40px rgba(77, 255, 0, 0.2);
+}
+.body__contant--text1:hover{
+   transition: all 0.3s ease 0s;
+   transform: translate(10px, 15px);
+}
+.body__contant--text2 {
+   line-height: 1.5;
+   background-color: #ff00f2;
+   padding: 65px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 44px 40px rgba(225, 0, 255, 0.2);
+
+}
+.body__contant--text2:hover{
+   transform: scale(0.9, 0.9);
+   transition: all 0.3s ease 0s;
+}
+.body__contant--text3 {
+   
+   line-height: 1.5;
+   background-color: #1eff00;
+   padding: 65px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 44px 40px rgba(77, 255, 0, 0.2);
+}
+.body__contant--text3:hover{
+   transition: all 0.3s ease 0s;
+   transform: rotate(10deg);
+}
+
+.body__contant--text4 {
+   line-height: 1.5;
+   background-color: #ff00f2;
+   padding: 65px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 44px 40px rgba(225, 0, 255, 0.2);
+
+} 
+.body__contant--text4:hover{
+   transition: all 0.3s ease 0s;
+   transform: skew(0deg,-10deg);
+}
+
+.body__contant--text5 {
+   line-height: 1.5;
+   background-color: #1eff00;
+   padding: 65px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 44px 40px rgba(77, 255, 0, 0.2);
+
+}  
+
+.body__contant--text5:hover{
+   transition: all 0.3s ease 0s;
+   transform: matrix(0.7, 0.1, 0.1, 0.5, 10, 15);
+}
+
+.body__contant--text6 {
+   line-height: 1.5;
+   background-color: #ff00f2;
+   padding: 65px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 44px 40px rgba(225, 0, 255, 0.2);
+
+}
+.body__contant--text6:hover{
+   transition: all 0.3s ease 0s;
+   transform: translate(30px, 30px) rotate(15deg) scale(0.8);
+}
+
+.body__contant--text7 {
+   line-height: 1.5;
+   background-color: #1eff00;
+   padding: 65px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 44px 40px rgba(77, 255, 0, 0.2);
+
+}
+.body__contant--text7:hover{
+   transition: all 0.3s ease 0s;
+   transform-origin:top left;
+   transform: rotate(15deg);
+}
+
+.body__contant--text8 {
+   line-height: 1.5;
+   background-color: #ff00f2;
+   padding: 65px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 44px 40px rgba(225, 0, 255, 0.2);
+
+}
+.body__contant--text8:hover{
+   transition: all 0.3s ease 0s;
+   transform: rotateX(45deg);
+}
+
+.body__contant--text9 {
+   line-height: 1.5;
+   background-color: #1eff00;
+   padding: 65px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 44px 40px rgba(77, 255, 0, 0.2);
+
+}
+.body__contant--text9:hover{
+   transition: all 0.3s ease 0s;
+   transform: translate3d(30px, 30px, 30px);
+}
+.body__contant--text10 {
+   line-height: 1.5;
+   background-color: #ff00f2;
+   padding: 65px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 44px 40px rgba(225, 0, 255, 0.2);
+
+}
+.body__contant--text10:hover{
+   transition: all 0.3s ease 0s;
+   transform: scale3d(0.5, 0.5, 0.5);
+}
+.body__contant--text11 {
+   line-height: 1.5;
+   background-color: #1eff00;
+   padding: 65px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 44px 40px rgba(77, 255, 0, 0.2);
+
+}
+.body__contant--text11:hover{
+   transition: all 0.3s ease 0s;
+   transform: rotate3d(1, 1, 1, 45deg);
+}
+.body__contant--text12 {
+   line-height: 1.5;
+   background-color: #ff00f2;
+   padding: 65px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 44px 40px rgba(225, 0, 255, 0.2);
+
+}
+.body__contant--text12:hover{
+   transition: all 0.3s ease 0s;
+   transform: matrix3d(1,0,0.00,0,0.00,0.564,0.34,0,0,-0.34,0.94,0,40,5,0,1);
+}
+.body__contant--text13 {
+   line-height: 1.5;
+   background-color: #1eff00;
+   padding: 65px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 44px 40px rgba(77, 255, 0, 0.2);
+
+}
+.body__contant--text13:hover{
+   transition: all 0.3s ease 0s;
+   transform: translate3d(10px, 3px,30px) rotate3d(1,1,1,40deg);
+}
+.body__contant--text14 {
+   line-height: 1.5;
+   background-color: #ff00f2;
+   padding: 65px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 44px 40px rgba(225, 0, 255, 0.2);
+}
+.body__contant--text14:hover{
+   transition: all 0.3s ease 0s;
+   transform: rotateY(150deg);
+   backface-visibility: visible;
+}
+
+.footer{
+   font-family: 'Press Start 2P', cursive;;
+   text-align: center;
+   font-size: 40px;
+   font-weight: 400;
+   letter-spacing: 7px;
+   text-transform: uppercase;
+   display: block;
+   color: rgb(0, 255, 60);
+   background-color: #000000;
+   padding: 20px;
+   box-sizing: border-box;
+}
